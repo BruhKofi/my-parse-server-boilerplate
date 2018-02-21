@@ -26,10 +26,12 @@ var api = new ParseServer({
 // If you wish you require them, you can set them as options in the initialization above:
 // javascriptKey, restAPIKey, dotNetKey, clientKey
 
-
-
+//Whatever you do, do not use this in production. install ssl and set to false or remove it
+var options = { allowInsecureHTTP: true };
 
 var dashboard = new ParseDashboard({
+  //By all means disable this one production!!!!!
+  "allowInsecureHTTP": true,
   "apps": [
     {
       "serverURL": "http://localhost:1337/parse",
@@ -38,7 +40,7 @@ var dashboard = new ParseDashboard({
       "appName": "MyApp"
     }
   ]
-});
+}, options);
 
 var app = express();
 
