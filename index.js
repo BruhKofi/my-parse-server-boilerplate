@@ -43,14 +43,14 @@ var dashboard = new ParseDashboard({
   "users": [
     {
       "user":"user1",
-      "pass":"pass"
+      "pass":"pass1",
+      "apps": [{"appId": "myAppId"}, {"appId": "myAppId2"}]
     },
     {
       "user":"user2",
-      "pass":"pass"
-    }
-  ],
-  "useEncryptedPasswords": true | false
+      "pass":"pass2",
+      "apps": [{"appId": "myAppId"}]
+    }  ]
 
 }, options);
 
