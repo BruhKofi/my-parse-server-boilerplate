@@ -39,7 +39,19 @@ var dashboard = new ParseDashboard({
       "masterKey": "myMasterKey",
       "appName": "MyApp"
     }
-  ]
+  ],
+  "users": [
+    {
+      "user":"user1",
+      "pass":"pass"
+    },
+    {
+      "user":"user2",
+      "pass":"pass"
+    }
+  ],
+  "useEncryptedPasswords": true | false
+
 }, options);
 
 var app = express();
