@@ -32,6 +32,7 @@ var options = { allowInsecureHTTP: true };
 var dashboard = new ParseDashboard({
   //By all means disable this one production!!!!!
   "allowInsecureHTTP": true,
+  //to run multiple apps on server, add new app object here
   "apps": [
     {
       "serverURL": "http://localhost:1337/parse",
