@@ -35,7 +35,7 @@ var dashboard = new ParseDashboard({
   //to run multiple apps on server, add new app object here
   "apps": [
     {
-      "serverURL": "http://localhost:1337/parse",
+      "serverURL": process.env.SERVER_URL || 'http://localhost:1337/parse',
       "appId": "myAppId",
       "masterKey": "myMasterKey",
       "appName": "MyApp"
